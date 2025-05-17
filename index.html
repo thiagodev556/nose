@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ft teta?</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #ffe6e6, #fff5f5);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #900;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .contenido {
+      text-align: center;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+      width: 90%;
+      max-width: 500px;
+    }
+
+    .texto {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.6;
+      margin-top: 15px;
+    }
+
+    .nombre {
+      display: inline-block;
+      padding: 8px 20px;
+      border: 4px dashed #e60000;
+      font-size: 28px;
+      color: #e60000;
+      margin-bottom: 15px;
+      background: #fff0f0;
+      border-radius: 15px;
+      animation: latido 1s infinite;
+    }
+
+    @keyframes latido {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    .corazon {
+      position: absolute;
+      font-size: 24px;
+      color: red;
+      animation: flotar 6s infinite ease-in-out;
+    }
+
+    @keyframes flotar {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: translateY(-20px) scale(1.2);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(-40px) scale(1);
+        opacity: 0;
+      }
+    }
+
+    .corazon:nth-child(1) { left: 10%; top: 80%; animation-delay: 0s; }
+    .corazon:nth-child(2) { left: 20%; top: 90%; animation-delay: 1s; }
+    .corazon:nth-child(3) { left: 70%; top: 85%; animation-delay: 2s; }
+    .corazon:nth-child(4) { left: 80%; top: 95%; animation-delay: 3s; }
+    .corazon:nth-child(5) { left: 50%; top: 100%; animation-delay: 4s; }
+    .corazon:nth-child(6) { left: 30%; top: 100%; animation-delay: 2.5s; }
+
+    audio {
+      margin-top: 15px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    @media (max-width: 400px) {
+      .nombre {
+        font-size: 24px;
+        padding: 6px 16px;
+      }
+
+      .texto {
+        font-size: 16px;
+      }
+
+      .corazon {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contenido">
+    <div class="nombre">Te amo</div>
+    <br>
+    <p>Tetona 🔥🥺, te amo Vaity</p>
+    <div class="texto">
+      Te amo demasiado, y por muchas razones...<br>
+      no podría dejar de amarte ni un solo momento,<br>
+      porque cada día me das más motivos<br>
+      para seguir enamorándome de ti.
+      <br><br>
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Botón Musical Asterik</title>
+  <style>
+    .asterik-player {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      background: linear-gradient(145deg, #2e2e2e, #1a1a1a);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 25px #00ffe0;
+      width: 250px;
+      margin: 50px auto;
+    }
+
+    .asterik-button {
+      background-color: #00ffe0;
+      border: none;
+      color: #000;
+      font-size: 20px;
+      padding: 15px 30px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #00ffe0;
+    }
+
+    .asterik-button:hover {
+      background-color: #00c9b8;
+      box-shadow: 0 0 20px #00ffe0;
+    }
+
+    .asterik-title {
+      color: #fff;
+      font-family: 'Comic Sans MS', cursive;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="asterik-player">
+    <div class="asterik-title">🎵 apreta aca culona 🎵</div>
+    <button class="asterik-button" id="playPauseBtn">▶️ Reproducir</button>
+    <audio id="audioTrack">
+      <source src="mi-audio.mpeg" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+  </div>
+
+  <script>
+    const audio = document.getElementById('audioTrack');
+    const button = document.getElementById('playPauseBtn');
+
+    button.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        button.textContent = '⏸️ Pausar';
+      } else {
+        audio.pause();
+        button.textContent = '▶️ Reproducir';
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+    </div>
+  </div>
+
+  <!-- Corazones flotando -->
+  <div class="corazon">❤️</div>
+  <div class="corazon">❤️</div>
+  <div class="corazon">❤️</div>
+  <div class="corazon">❤️</div>
+  <div class="corazon">❤️</div>
+  <div class="corazon">❤️</div>
+
+</body>
+</html>
